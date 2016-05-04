@@ -1,5 +1,13 @@
 {
   "name": "leoalmar/codetags",
+  "description": "Gerenciamento de Categorias",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonardo Almeida Araújo",
+      "email": "leonardoxsystems@gmail.com"
+    }
+  ],
   "require": {
     "php": ">=5.5.9",
     "illuminate/contracts": "~5.1",
@@ -12,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CodePress\\CodeCategory\\": "src/CodeCategory/"
+      "Leoalmar\\CodeTags\\": "src/CodeTags/"
     }
   }
 }
