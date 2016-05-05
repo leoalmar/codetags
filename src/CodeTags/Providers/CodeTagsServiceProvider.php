@@ -1,0 +1,20 @@
+<?php
+
+namespace Leoalmar\CodeTags\Providers;
+
+
+use Illuminate\Support\ServiceProvider;
+
+class CodeTagsServiceProvider extends ServiceProvider
+{
+
+    public function boot()
+    {
+        $this->publishes([__DIR__ . '/../../resources/migrations/' => base_path('database/migrations')], 'migrations');
+    }
+
+    public function register()
+    {
+        // TODO: Implement register() method.
+    }
+}

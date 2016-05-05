@@ -4,17 +4,20 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCodetagsTagsTable extends
+class CreateCodetagsTagsTable
 {
 
     public function up()
     {
-        Schema::create('codetags_tags',function($table){
+        Schema::create('codetags_tags',function(Blueprint $table){
 
-            $table->increments();
+            $table->increments('id');
+
             $table->string('name');
-            $table->string('taggable_id');
-            $table->string('taggable_type');
+
+            $table->integer('taggable_id')->unsigned()->index();
+            $table->string('taggable_type')->index();
+
             $table->timestamps();
 
         });

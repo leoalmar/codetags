@@ -9,7 +9,9 @@ class Tag extends Model
     protected $table = "codetags_tags";
 
     protected $fillable = [
-        'name'
+        'name',
+        'taggable_id',
+        'taggable_type'
     ];
 
     public function taggable()
