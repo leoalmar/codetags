@@ -19,5 +19,9 @@ class TagTest extends AbstractTestCase
     {
         $tag = Tag::create(['name' => 'php','taggable_id' => 1, 'taggable_type' => 'App\User']);
         $this->assertEquals('php', $tag->name);
+
+        $tagList = Tag::all();
+        $this->assertCount(1,$tagList);
+        
     }
 }
