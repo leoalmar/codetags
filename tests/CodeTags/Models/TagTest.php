@@ -22,6 +22,6 @@ class TagTest extends AbstractTestCase
 
         $tagList = Tag::all();
         $this->assertCount(1,$tagList);
-        
+
     }
 }
